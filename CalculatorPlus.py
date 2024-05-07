@@ -7,7 +7,9 @@ class Calculator:
     def multiply(self, a, b):
         return a * b
     def divide(self, a, b):
-        return a / b
+ 	if b == 0:
+	raise ValueError("Cannot divide by zero.")
+	return a / b
     def square_root(self, x):
         return math.sqrt(x)
 if __name__ == "__main__":
